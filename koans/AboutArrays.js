@@ -77,7 +77,7 @@ Note: The original array will not be changed.
 */
 
     var copyOfArray = array.slice();
-    copyOfArray[3] = "changed in copyOfArray"; //array.slice(3) = 'changed in copyOfArray'
+    copyOfArray[3] = "changed in copyOfArray"; //array.slice(3) = 'changed in copyOfArray', the original array wasn't changed, only the new array
     expect(array[3]).toBe("three");
   });
 //array = ["changed in copyOfArray", "four", "changed in assignedArray"]
